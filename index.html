@@ -1,85 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Interactive Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="addTabFocus()">
 
-<header>
-    <h1>Accessible Interactive Photo Gallery</h1>
-    <p>Use mouse or keyboard tab key to interact with the images.</p>
-</header>
+    <header>
+        <h1>Accessible Interactive Photo Gallery</h1>
+        <p>Use mouse or keyboard tab key to interact with the images.</p>
+    </header>
 
-<main>
+    <main>
 
-    <div id="image">
-        Hover over or focus on an image below to display details here.
-    </div>
+        <div id="image">
+            Hover over or focus on an image below to display details here.
+        </div>
 
-    <div class="gallery">
+        <div class="gallery">
 
-        <figure>
-            <img src="image1.jpg"
-                 alt="Beautiful mountain lake surrounded by trees"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+            <figure>
+                <img src="image1.jpg"
+                    alt="Beautiful mountain lake surrounded by trees"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
 
-        <figure>
-            <img src="image2.jpg"
-                 alt="Cute dog sitting in the grass"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+                <figcaption>Mountain Lake</figcaption>
+            </figure>
 
-        <figure>
-            <img src="image3.jpg"
-                 alt="Green forest with sunlight shining through trees"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+            <figure>
+                <img src="image2.jpg"
+                    alt="Cute dog sitting in the grass"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
 
-        <figure>
-            <img src="image4.jpg"
-                 alt="Calm beach during sunset with orange sky"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+                <figcaption>Dog in Grass</figcaption>
+            </figure>
 
-        <figure>
-            <img src="image5.jpg"
-                 alt="Students working together on laptops"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+            <figure>
+                <img src="image3.jpg"
+                    alt="Green forest with sunlight shining through trees"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
 
-        <figure>
-            <img src="image6.jpg"
-                 alt="Snow covered mountains under blue sky"
-                 onmouseover="upDate(this)"
-                 onmouseleave="unDo()"
-                 onfocus="upDate(this)"
-                 onblur="unDo()">
-        </figure>
+                <figcaption>Sunlight Forest</figcaption>
+            </figure>
 
-    </div>
+            <figure>
+                <img src="image4.jpg"
+                    alt="Calm beach during sunset with orange sky"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
 
-</main>
+                <figcaption>Beach Sunset</figcaption>
+            </figure>
 
-<script src="script.js"></script>
+            <figure>
+                <img src="image5.jpg"
+                    alt="Students working together on laptops"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                <figcaption>Students Working</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image6.jpg"
+                    alt="Snow covered mountains under blue sky"
+                    width="300"
+                    height="200"
+                    onmouseover="upDate(this)"
+                    onmouseleave="unDo()"
+                    onfocus="upDate(this)"
+                    onblur="unDo()">
+
+                <figcaption>Snow Mountains</figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
