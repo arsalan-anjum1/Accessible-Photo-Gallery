@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabFocus()">
+
+<header>
+    <h1>Accessible Interactive Photo Gallery</h1>
+    <p>Use mouse or keyboard tab key to interact with the images.</p>
+</header>
+
+<main>
+
+    <div id="image">
+        Hover over or focus on an image below to display details here.
+    </div>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="images/image1.jpg"
+                 alt="Beautiful mountain lake surrounded by trees"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/image2.jpg"
+                 alt="Cute dog sitting in the grass"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/image3.jpg"
+                 alt="Green forest with sunlight shining through trees"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/image4.jpg"
+                 alt="Calm beach during sunset with orange sky"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/image5.jpg"
+                 alt="Students working together on laptops"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/image6.jpg"
+                 alt="Snow covered mountains under blue sky"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()"
+                 onfocus="upDate(this)"
+                 onblur="unDo()">
+        </figure>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
